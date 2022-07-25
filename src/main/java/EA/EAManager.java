@@ -3,6 +3,7 @@ package EA;
 import logic.Course;
 import logic.Preferences;
 import logic.Schedule;
+
 import org.uncommons.maths.random.MersenneTwisterRNG;
 import org.uncommons.maths.random.Probability;
 import org.uncommons.watchmaker.framework.EvolutionaryOperator;
@@ -10,6 +11,8 @@ import org.uncommons.watchmaker.framework.GenerationalEvolutionEngine;
 import org.uncommons.watchmaker.framework.operators.EvolutionPipeline;
 import org.uncommons.watchmaker.framework.selection.RouletteWheelSelection;
 import org.uncommons.watchmaker.framework.termination.GenerationCount;
+
+
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -98,8 +101,8 @@ public class EAManager
 
         Schedule winningSchedule;
 
-        winningSchedule = engine.evolve(10, // individuals per generation
-                0, // Elites per generation
+        winningSchedule = engine.evolve(50, // individuals per generation
+                3, // Elites per generation
                 new GenerationCount(150));
 
         // Go!
@@ -121,4 +124,3 @@ public class EAManager
 
 
 }
-

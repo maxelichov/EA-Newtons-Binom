@@ -1,4 +1,3 @@
-
 package logic;
 
 import java.util.ArrayList;
@@ -17,7 +16,7 @@ public class Course implements Cloneable{
     private Date testA;
     private Date testB;
     private Boolean isMandatory;
-
+    private List<Practice> practices;
 
 
     public Course()
@@ -26,7 +25,7 @@ public class Course implements Cloneable{
         groups = new ArrayList<Group>();
     }
 
-    public Course(String courseName, float credits, int difficulty, List groups, Date testA, Date testB, Boolean isMandatory) {
+    public Course(String courseName, float credits, int difficulty, List groups, Date testA, Date testB, Boolean isMandatory, List<Practice> practices) {
         this.courseName = courseName;
         this.credits = credits;
         this.difficulty = difficulty;
@@ -34,6 +33,7 @@ public class Course implements Cloneable{
         this.testA = testA;
         this.testB = testB;
         this.isMandatory=isMandatory;
+        this.practices=practices;
     }
 
     public Course(String courseName, double credits, int difficulty, Date testA, Date testB, Boolean mandatory) {
