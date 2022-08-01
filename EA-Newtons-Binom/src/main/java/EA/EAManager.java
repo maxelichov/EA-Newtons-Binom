@@ -1,6 +1,7 @@
 package EA;
 
 import logic.Course;
+import logic.EaRunTimeParameters;
 import logic.Preferences;
 import logic.Schedule;
 
@@ -18,10 +19,10 @@ import java.util.List;
 
 
 
-
 public class EAManager
 {
 
+    private final EaRunTimeParameters eaRunTimeParameters;
     private Preferences preferences;
     private List<Course> courses;
     private ArrayList<EvolutionaryOperator<Schedule>> operators = new ArrayList<EvolutionaryOperator<Schedule>>();
@@ -32,13 +33,14 @@ public class EAManager
 
 
 
-    public EAManager(List<Course> filteredCourses, Preferences pref)
+    public EAManager(List<Course> filteredCourses, Preferences pref, EaRunTimeParameters eaRunTimeParameters)
     {
         preferences = pref;
         courses=new ArrayList<Course>(filteredCourses.size());
         cloneAndSetCourses(filteredCourses);
         scheduleMutation = new ScheduleMutation(new Probability(.001d), new Probability(.005d),courses, pref.getMustHaveCourses());
         scheduleCrossover = new ScheduleCrossover(new Probability(.9d), pref.getMustHaveCourses());
+        this.eaRunTimeParameters=eaRunTimeParameters;
     }
 
 
@@ -75,7 +77,7 @@ public class EAManager
     }
 
 
-    public void runEngine(List<Course> courses)
+    public Schedule runEngine(List<Course> courses, EaRunTimeParameters eaRunTimeParameters)
     {
 
 
@@ -83,25 +85,25 @@ public class EAManager
         engine = new GenerationalEvolutionEngine<Schedule>(
                 new ScheduleFactory(courses, preferences.getMustHaveCourses()),
                 pipeline,
-                new ScheduleFitnessFunction(preferences),
+                new src.main.java.EA.ScheduleFitnessFunction(preferences),
                 new RouletteWheelSelection(),
                 new MersenneTwisterRNG());
 
         engine.setSingleThreaded(false);
 
-        generateGeneration(engine);
+        return generateGeneration(engine, eaRunTimeParameters);
 
     }
 
 
-    public void generateGeneration(GenerationalEvolutionEngine<Schedule> engine)
+    public Schedule generateGeneration(GenerationalEvolutionEngine<Schedule> engine, EaRunTimeParameters eaRunTimeParameters)
     {
 
         Schedule winningSchedule;
 
-        winningSchedule = engine.evolve(50, // individuals per generation
-                3, // Elites per generation
-                new GenerationCount(150));
+        winningSchedule = engine.evolve(eaRunTimeParameters.getPopulationSize(), // individuals per generation
+                eaRunTimeParameters.getEliteCount(), // Elites per generation
+                new GenerationCount(eaRunTimeParameters.getNumOfGenerations()));
 
         // Go!
         //    winningSchedule = engine.evolve(4, // individuals per generation
@@ -110,7 +112,9 @@ public class EAManager
 
         engine.addEvolutionObserver(new ScheduleObserver());
 
+
         winningSchedule.printSchedule();
+        return winningSchedule;
         // Display the health of each generation
         //engine.addEvolutionObserver(new EAPackage.ScheduleObserver());
 

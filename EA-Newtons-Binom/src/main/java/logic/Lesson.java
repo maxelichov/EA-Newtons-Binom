@@ -1,5 +1,7 @@
 package logic;
 
+import java.util.Objects;
+
 public class Lesson implements Cloneable{
     private Days day;
     private TimeRange timeRange;
@@ -38,5 +40,18 @@ public class Lesson implements Cloneable{
 
     public TimeRange getRangeTime() {
         return timeRange;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Lesson lesson = (Lesson) o;
+        return day == lesson.day && timeRange.equals(lesson.timeRange);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(day, timeRange);
     }
 }

@@ -149,8 +149,9 @@ public class Course implements Cloneable{
     }
 
     public void addGroup(Group newGroup){
-        //todo: check if newGroup already exist in groups
-        groups.add(newGroup);
+        if(!groups.contains(newGroup)){
+            groups.add(newGroup);
+        }
     }
 
     @Override
@@ -176,5 +177,15 @@ public class Course implements Cloneable{
     @Override
     public int hashCode() {
         return Objects.hash(courseName, credits, difficulty, testA, testB, isMandatory);
+    }
+
+    public void addGroupsWithoutDup(List<Group> newGroups) {
+        if(groups == null){
+            groups=newGroups;
+        }else {
+            for (Group group : newGroups) {
+                addGroup(group);
+            }
+        }
     }
 }

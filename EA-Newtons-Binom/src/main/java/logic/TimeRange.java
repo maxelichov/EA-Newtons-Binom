@@ -1,6 +1,8 @@
 package logic;
 
 import java.time.LocalTime;
+import java.util.Objects;
+
 //todo: what if end time<start time
 public class TimeRange {
     private LocalTime startTime;// = LocalTime.of(12, 20);
@@ -33,5 +35,18 @@ public class TimeRange {
                 "startTime=" + startTime +
                 ", endTime=" + endTime +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        TimeRange timeRange = (TimeRange) o;
+        return startTime.equals(timeRange.startTime) && endTime.equals(timeRange.endTime);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(startTime, endTime);
     }
 }

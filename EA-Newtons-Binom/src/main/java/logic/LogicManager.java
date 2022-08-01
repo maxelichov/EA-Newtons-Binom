@@ -12,8 +12,12 @@ public class LogicManager
 
     private EAManager EAEngineManager;
     private List<Course> filteredCourses;
-    private Preferences pref;
+    //private Preferences pref;
+    private EaRunTimeParameters eaRunTimeParameters;
 
+    public LogicManager(EaRunTimeParameters eaRunTimeParameters){
+        this.eaRunTimeParameters=eaRunTimeParameters;
+    }
 
     public void filterCourses(Preferences pref)
     {
@@ -43,7 +47,7 @@ public class LogicManager
         }
 
         setFilteredCourses(res);
-        EAEngineManager  = new EAManager(res, pref);
+        EAEngineManager = new EAManager(res, pref,eaRunTimeParameters);
 
     }
 
@@ -57,19 +61,22 @@ public class LogicManager
 
     }
 
-    public void startEngine()
+    public Schedule startEngine()
     {
 
-        EAEngineManager.runEngine(filteredCourses);
+        return EAEngineManager.runEngine(filteredCourses, eaRunTimeParameters);
 
     }
 
+    /*
     public List<Course> getValidCourses()
     {
 
         return this.filteredCourses;
 
     }
+
+     */
 
 
 
