@@ -1,6 +1,9 @@
 package logic;
 
+import EA.Strategies;
+
 public class EaRunTimeParameters {
+    Strategies strategy;
     int populationSize;//50
     int eliteCount;//3
     int numOfGenerations;//150
@@ -24,5 +27,9 @@ public class EaRunTimeParameters {
 
     public int getNumOfGenerations() {
         return numOfGenerations;
+    }
+
+    public Strategies getStrategy() {
+        return strategy;
     }
 }

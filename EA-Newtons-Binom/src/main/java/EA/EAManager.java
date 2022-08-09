@@ -86,7 +86,7 @@ public class EAManager
                 new ScheduleFactory(courses, preferences.getMustHaveCourses()),
                 pipeline,
                 new src.main.java.EA.ScheduleFitnessFunction(preferences),
-                new RouletteWheelSelection(),
+                SelectionStrategyFactory.getStrategy(eaRunTimeParameters.getStrategy()),
                 new MersenneTwisterRNG());
 
         engine.setSingleThreaded(false);
@@ -100,6 +100,7 @@ public class EAManager
     {
 
         Schedule winningSchedule;
+
 
         winningSchedule = engine.evolve(eaRunTimeParameters.getPopulationSize(), // individuals per generation
                 eaRunTimeParameters.getEliteCount(), // Elites per generation
@@ -120,6 +121,8 @@ public class EAManager
 
 
         // Go!
+
+
 
     }
 

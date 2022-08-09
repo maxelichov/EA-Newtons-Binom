@@ -1,1 +1,1469 @@
-[{"courseName":"logic","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":9,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":10,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":9,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":16,"minute":15,"second":0,"nano":0},"endTime":{"hour":18,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"reasoning","credits":3.0,"difficulty":7,"groups":[{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":9,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":10,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":19,"minute":15,"second":0,"nano":0},"endTime":{"hour":21,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"calculus1","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}},{"day":"MONDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"MONDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":14,"minute":15,"second":0,"nano":0},"endTime":{"hour":15,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"computerScienceIntroduction","credits":5.0,"difficulty":7,"groups":[{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":9,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":15,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":8,"minute":30,"second":0,"nano":0},"endTime":{"hour":10,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"linear","credits":6.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":9,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"logic2","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":9,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Introduction To Probability","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":9,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"advanced Programming C","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":9,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"calculus 2","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":9,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Data Structures","credits":5.0,"difficulty":7,"groups":[{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":10,"minute":30,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":11,"minute":30,"second":0,"nano":0},"endTime":{"hour":13,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":11,"minute":30,"second":0,"nano":0},"endTime":{"hour":13,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":8,"minute":0,"second":0,"nano":0},"endTime":{"hour":10,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":14,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":17,"minute":45,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"linear 2","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":10,"minute":0,"second":0,"nano":0},"endTime":{"hour":11,"minute":30,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":30,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":30,"second":0,"nano":0},"endTime":{"hour":16,"minute":0,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":11,"minute":0,"second":0,"nano":0},"endTime":{"hour":12,"minute":30,"second":0,"nano":0}}}]},{"lessons":[{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":10,"minute":15,"second":0,"nano":0},"endTime":{"hour":11,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":9,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Computer structure","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":15,"minute":15,"second":0,"nano":0},"endTime":{"hour":16,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":14,"minute":15,"second":0,"nano":0},"endTime":{"hour":15,"minute":45,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":14,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Computer architecture","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":12,"minute":45,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":9,"minute":15,"second":0,"nano":0},"endTime":{"hour":10,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Object Oriented Programming CPP","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":11,"minute":15,"second":0,"nano":0},"endTime":{"hour":13,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"MONDAY","timeRange":{"startTime":{"hour":8,"minute":30,"second":0,"nano":0},"endTime":{"hour":11,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"TUESDAY","timeRange":{"startTime":{"hour":8,"minute":15,"second":0,"nano":0},"endTime":{"hour":10,"minute":45,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":15,"second":0,"nano":0},"endTime":{"hour":15,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"algorithms","credits":5.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":14,"minute":0,"second":0,"nano":0},"endTime":{"hour":16,"minute":0,"second":0,"nano":0}}},{"day":"TUESDAY","timeRange":{"startTime":{"hour":14,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":45,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"computability","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":16,"minute":0,"second":0,"nano":0},"endTime":{"hour":18,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":16,"minute":0,"second":0,"nano":0},"endTime":{"hour":19,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":16,"minute":0,"second":0,"nano":0},"endTime":{"hour":18,"minute":0,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":16,"minute":0,"second":0,"nano":0},"endTime":{"hour":19,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 13, 3922 12:00:00 AM","testB":"Sep 21, 3922 12:00:00 AM","isMandatory":true},{"courseName":"design patterns","credits":4.0,"difficulty":6,"groups":[{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":0,"second":0,"nano":0},"endTime":{"hour":12,"minute":0,"second":0,"nano":0}}}]}],"isMandatory":false},{"courseName":"operating systems","credits":4.0,"difficulty":8,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]}],"testA":"Sep 30, 3922 12:00:00 AM","testB":"Oct 10, 3922 12:00:00 AM","isMandatory":true},{"courseName":"JAVA","credits":4.0,"difficulty":10,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 17, 3922 12:00:00 AM","testB":"Sep 29, 3922 12:00:00 AM","isMandatory":true},{"courseName":"CSharp","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 20, 3922 12:00:00 AM","testB":"Oct 5, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Networking","credits":4.0,"difficulty":7,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"THURSDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 27, 3922 12:00:00 AM","testB":"Sep 24, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Data Bases","credits":3.0,"difficulty":5,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":0,"second":0,"nano":0},"endTime":{"hour":12,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":14,"minute":0,"second":0,"nano":0},"endTime":{"hour":16,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 27, 3922 12:00:00 AM","testB":"Sep 24, 3922 12:00:00 AM","isMandatory":true},{"courseName":"Complexity","credits":5.0,"difficulty":10,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]},{"lessons":[{"day":"THURSDAY","timeRange":{"startTime":{"hour":10,"minute":0,"second":0,"nano":0},"endTime":{"hour":12,"minute":30,"second":0,"nano":0}}},{"day":"WEDNESDAY","timeRange":{"startTime":{"hour":14,"minute":0,"second":0,"nano":0},"endTime":{"hour":16,"minute":0,"second":0,"nano":0}}}]}],"testA":"Aug 27, 3922 12:00:00 AM","testB":"Sep 24, 3922 12:00:00 AM","isMandatory":true},{"courseName":"WorkShop","credits":6.0,"difficulty":6,"groups":[{"lessons":[{"day":"SUNDAY","timeRange":{"startTime":{"hour":12,"minute":0,"second":0,"nano":0},"endTime":{"hour":14,"minute":30,"second":0,"nano":0}}},{"day":"FRIDAY","timeRange":{"startTime":{"hour":13,"minute":0,"second":0,"nano":0},"endTime":{"hour":15,"minute":0,"second":0,"nano":0}}}]}],"isMandatory":true}]
+[
+    {
+        "courseName": "logic",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "10:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "16:15:00",
+                            "endTime": "18:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "reasoning",
+        "credits": 3.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "10:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "19:15:00",
+                            "endTime": "21:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "calculus1",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    },
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "14:15:00",
+                            "endTime": "15:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "computerScienceIntroduction",
+        "credits": 5.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "15:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "08:30:00",
+                            "endTime": "10:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "linear",
+        "credits": 6.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "09:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "logic2",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "09:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Introduction To Probability",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "09:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "advanced Programming C",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "09:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "calculus 2",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "09:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Data Structures",
+        "credits": 5.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "10:30:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "11:30:00",
+                            "endTime": "13:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "11:30:00",
+                            "endTime": "13:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "08:00:00",
+                            "endTime": "10:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "14:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "17:45:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "linear 2",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "10:00:00",
+                            "endTime": "11:30:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:30:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:30:00",
+                            "endTime": "16:00:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "11:00:00",
+                            "endTime": "12:30:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "10:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "09:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Computer structure",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "15:15:00",
+                            "endTime": "16:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "14:15:00",
+                            "endTime": "15:45:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "14:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Computer architecture",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "12:45:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "10:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Object Oriented Programming CPP",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "11:15:00",
+                            "endTime": "13:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "MONDAY",
+                        "rangeTime": {
+                            "startTime": "08:30:00",
+                            "endTime": "11:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "08:15:00",
+                            "endTime": "10:45:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:15:00",
+                            "endTime": "15:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "algorithms",
+        "credits": 5.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "14:00:00",
+                            "endTime": "16:00:00"
+                        }
+                    },
+                    {
+                        "day": "TUESDAY",
+                        "rangeTime": {
+                            "startTime": "14:00:00",
+                            "endTime": "15:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "computability",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "16:00:00",
+                            "endTime": "18:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "16:00:00",
+                            "endTime": "19:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "16:00:00",
+                            "endTime": "18:00:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "16:00:00",
+                            "endTime": "19:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "design patterns",
+        "credits": 4.0,
+        "difficulty": 6,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:00:00",
+                            "endTime": "12:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": null,
+        "testB": null,
+        "mandatory": false
+    },
+    {
+        "courseName": "operating systems",
+        "credits": 4.0,
+        "difficulty": 8,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-09-29T21:00:00.000+00:00",
+        "testB": "3922-10-09T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "JAVA",
+        "credits": 4.0,
+        "difficulty": 10,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-16T21:00:00.000+00:00",
+        "testB": "3922-09-28T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "CSharp",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-19T21:00:00.000+00:00",
+        "testB": "3922-10-04T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Networking",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-26T21:00:00.000+00:00",
+        "testB": "3922-09-23T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Data Bases",
+        "credits": 3.0,
+        "difficulty": 5,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:00:00",
+                            "endTime": "12:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "14:00:00",
+                            "endTime": "16:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-26T21:00:00.000+00:00",
+        "testB": "3922-09-23T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "Complexity",
+        "credits": 5.0,
+        "difficulty": 10,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            },
+            {
+                "lessons": [
+                    {
+                        "day": "THURSDAY",
+                        "rangeTime": {
+                            "startTime": "10:00:00",
+                            "endTime": "12:30:00"
+                        }
+                    },
+                    {
+                        "day": "WEDNESDAY",
+                        "rangeTime": {
+                            "startTime": "14:00:00",
+                            "endTime": "16:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-26T21:00:00.000+00:00",
+        "testB": "3922-09-23T21:00:00.000+00:00",
+        "mandatory": true
+    },
+    {
+        "courseName": "WorkShop",
+        "credits": 6.0,
+        "difficulty": 6,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "12:00:00",
+                            "endTime": "14:30:00"
+                        }
+                    },
+                    {
+                        "day": "FRIDAY",
+                        "rangeTime": {
+                            "startTime": "13:00:00",
+                            "endTime": "15:00:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": null,
+        "testB": null,
+        "mandatory": true
+    }
+]

@@ -83,4 +83,7 @@ public class CoursesService {
     }
 
 
+    public Gson getGson() {
+        return gson;
+    }
 }
