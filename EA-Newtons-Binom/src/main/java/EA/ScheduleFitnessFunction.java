@@ -74,9 +74,14 @@ public class ScheduleFitnessFunction implements FitnessEvaluator<Schedule>
         finalFitnessScore += creditPointFitnessScore ;
 
 
-        double overlapTimeLessonsFitnessScore = evaluateOverLappingLessonsFitnessScore(candidate);
+        double overlapTimeLessonsFitnessScore = evaluateOverLappingLessonsAndPracticesFitnessScore(candidate);
         candidate.setLessonsOverlappingFitnessScore(overlapTimeLessonsFitnessScore);
         finalFitnessScore += overlapTimeLessonsFitnessScore;
+
+
+        double overlapLessonsAndPracticesFitnessScore = evaluateOverLappingLessonsAndPracticesInACourseFitnessScore(candidate);
+        candidate.setLessonsAndPracticeOverlappingFitnessScore(overlapLessonsAndPracticesFitnessScore);
+        finalFitnessScore += overlapLessonsAndPracticesFitnessScore;
 
 
         repeatingCoursesFitnessScore = repeatingCoursesFitnessScore(candidate);
@@ -163,7 +168,7 @@ public class ScheduleFitnessFunction implements FitnessEvaluator<Schedule>
         return res;
     }
 
-    private double evaluateOverLappingLessonsFitnessScore(Schedule schedule)
+    private double evaluateOverLappingLessonsAndPracticesFitnessScore(Schedule schedule)
     {
         List<Course>coursess=schedule.getCourses();
         for(Course course1:coursess){
@@ -173,6 +178,17 @@ public class ScheduleFitnessFunction implements FitnessEvaluator<Schedule>
                         return - generation;
                     }
                 }
+            }
+        }
+        return 10;
+    }
+
+    private double evaluateOverLappingLessonsAndPracticesInACourseFitnessScore(Schedule schedule)
+    {
+        List<Course>coursess=schedule.getCourses();
+        for(Course course:coursess){
+            if(course.isGroupAndPracticeOverlapping()){
+                return - generation;
             }
         }
         return 10;

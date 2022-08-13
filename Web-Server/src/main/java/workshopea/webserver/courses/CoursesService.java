@@ -3,14 +3,11 @@ package workshopea.webserver.courses;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.Course;
-import logic.Group;
-import logic.Practice;
 import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 
 //This means that it is a class designed to serve spring boot operations.

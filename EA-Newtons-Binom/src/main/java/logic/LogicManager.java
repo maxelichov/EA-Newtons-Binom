@@ -21,34 +21,68 @@ public class LogicManager
 
     public void filterCourses(Preferences pref)
     {
-        List<Course>res=new ArrayList<Course>();
-        for(Course currCourse : pref.getPrefCourse()){
-            Course newCourse=new Course(currCourse.getCourseName(),currCourse.getCredits(),currCourse.getDifficulty(),currCourse.getTestA(),currCourse.getTestB(),currCourse.getMandatory());
-            Boolean flag=false;
-            for(Group currGroup : currCourse.getGroups()){
-                Group newGroup=new Group();
-                for(Lesson currLesson : currGroup.getLessons()){
-                    if(pref.getUnavailablityWeekSchedule().isAvailabile(currLesson.getDay(),currLesson.getRangeTime())){
-                        newGroup.addLesson(currLesson);
-                        flag=true;
-                    }else{
-                        break;
-                    }
-                }
+        List<Course>res = new ArrayList<Course>();
+        for(Course currCourse : pref.getPrefCourse())
+        {
+            Course newCourse = new Course(currCourse.getCourseName(),currCourse.getCredits(),currCourse.getDifficulty(),currCourse.getTestA(),currCourse.getTestB(),currCourse.getMandatory());
 
-                if(flag){
+
+            for(Group currGroup : currCourse.getGroups()){
+
+                Group newGroup = isAllLessonAvailableInAGroup(currGroup, pref.getUnavailablityWeekSchedule());
+
+                if(newGroup != null)
+                {
                     newCourse.addGroup(newGroup);
                 }
+
             }
 
-            if(flag){
+            for(Lesson practice: currCourse.getCoursePractices()) //todo: fix coursePractice is null
+            {
+
+                if (pref.getUnavailablityWeekSchedule().isAvailabile(practice.getDay(), practice.getRangeTime()))
+                {
+                    newCourse.addCoursePractice(practice);
+                }
+
+            }
+
+            if(newCourse.getGroups().size() > 0 && newCourse.getCoursePractices().size() > 0)
+            {
                 res.add(newCourse);
             }
+
+
+
         }
 
         setFilteredCourses(res);
         EAEngineManager = new EAManager(res, pref,eaRunTimeParameters);
 
+    }
+
+
+
+
+    public Group isAllLessonAvailableInAGroup(Group group, WeekSchedule unAvailableAt)
+    {
+        Group newGroup = new Group();
+
+        for(Lesson currLesson : group.getLessons())
+        {
+            if (unAvailableAt.isAvailabile(currLesson.getDay(), currLesson.getRangeTime()))
+            {
+                newGroup.addLesson(currLesson);
+            }
+
+            else
+            {
+                return null;
+            }
+
+        }
+        return newGroup;
     }
 
 

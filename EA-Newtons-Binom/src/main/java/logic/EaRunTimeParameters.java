@@ -1,20 +1,40 @@
 package logic;
 
 import EA.Strategies;
+import EA.TerminationConditions;
+import dto.DtoStrategy;
+import dto.DtoTerminationCondition;
+import org.uncommons.maths.random.Probability;
+import org.uncommons.watchmaker.framework.TerminationCondition;
 
 public class EaRunTimeParameters {
-    Strategies strategy;
+
+    private DtoStrategy dtoStrategy;
+    private DtoTerminationCondition dtoTerminationCondition;
+
+
     int populationSize;//50
     int eliteCount;//3
-    int numOfGenerations;//150
 
-    public EaRunTimeParameters(int populationSize, int eliteCount, int numOfGenerations) throws Exception {
-        if(populationSize<0 || eliteCount<0 || numOfGenerations<0){
+
+
+    public EaRunTimeParameters(DtoStrategy dtoStrategy, DtoTerminationCondition dtoTerminationCondition,int populationSize, int eliteCount) throws Exception{
+        if(populationSize<0 || eliteCount<0){
             throw new Exception("parameters must be positive number or 0");
         }
         this.populationSize = populationSize;
         this.eliteCount = eliteCount;
-        this.numOfGenerations = numOfGenerations;
+        this.dtoStrategy=dtoStrategy;
+        this.dtoTerminationCondition=dtoTerminationCondition;
+    }
+
+    public DtoStrategy getDtoStrategy()
+    {
+        return dtoStrategy;
+    }
+
+    public DtoTerminationCondition getDtoTerminationCondition(){
+        return dtoTerminationCondition;
     }
 
     public int getPopulationSize() {
@@ -25,11 +45,6 @@ public class EaRunTimeParameters {
         return eliteCount;
     }
 
-    public int getNumOfGenerations() {
-        return numOfGenerations;
-    }
 
-    public Strategies getStrategy() {
-        return strategy;
-    }
+
 }

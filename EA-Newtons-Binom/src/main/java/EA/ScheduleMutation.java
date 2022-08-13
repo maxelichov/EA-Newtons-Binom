@@ -2,6 +2,7 @@ package EA;
 
 import logic.Course;
 import logic.Group;
+import logic.Lesson;
 import logic.Schedule;
 import org.uncommons.maths.random.Probability;
 import org.uncommons.watchmaker.framework.EvolutionaryOperator;
@@ -58,7 +59,7 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
 
         for(Schedule currSchedule:res)
         {
-            int num=random.nextInt(100);
+            int num=random.nextInt(101);
 
             switch (num)
             {
@@ -80,6 +81,8 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
                 {
                     mutationChangeGroup(currSchedule);
                 }
+                case 4:
+                    mutationChangePractice(currSchedule);
                 default:
                 {
                     //System.out.println("some problem. its never can get here!");
@@ -90,6 +93,31 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
         }
 
         return res;
+    }
+
+    private void mutationChangePractice(Schedule currSchedule)
+    {
+        Random rnd=new Random();
+        Course course = currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+
+
+        for(Course currCourse: filteredCourses)
+        {
+            if(currCourse.isSameName(course.getCourseName())){
+                Lesson newPractice = null;
+                try
+                {
+                    newPractice = (Lesson) currCourse.getCoursePractices().get(rnd.nextInt(currCourse.getCoursePractices().size())).clone();
+                    List<Lesson> newPracticeList=new ArrayList<Lesson>();
+                    newPracticeList.add(newPractice);
+                    course.setPractices(newPracticeList);
+                } catch (CloneNotSupportedException e)
+                {
+                    e.printStackTrace();
+                }
+                break;
+            }
+        }
     }
 
 
