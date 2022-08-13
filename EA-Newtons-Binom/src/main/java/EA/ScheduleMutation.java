@@ -107,6 +107,9 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
                 Lesson newPractice = null;
                 try
                 {
+                    if(currCourse.getCoursePractices().size()==0){
+                        return;
+                    }
                     newPractice = (Lesson) currCourse.getCoursePractices().get(rnd.nextInt(currCourse.getCoursePractices().size())).clone();
                     List<Lesson> newPracticeList=new ArrayList<Lesson>();
                     newPracticeList.add(newPractice);

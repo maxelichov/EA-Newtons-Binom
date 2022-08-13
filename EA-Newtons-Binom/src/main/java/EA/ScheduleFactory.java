@@ -75,16 +75,22 @@ public class ScheduleFactory implements CandidateFactory {
 
         //get all courses that wasn't in
         Random random = new Random();
-        int randIndexForGroup = random.nextInt(course.getGroups().size());
-        int randIndexForPractice = random.nextInt(course.getCoursePractices().size());
+
         Course newCourse = null;
         try {
             newCourse = (Course) course.clone();
+
+            int randIndexForGroup = random.nextInt(course.getGroups().size());
             List<Group> newGroup = Arrays.asList(newCourse.getGroups().get(randIndexForGroup));
 
             newCourse.setGroups(newGroup);
 
-            List<Lesson> newCoursePractices = Arrays.asList(newCourse.getCoursePractices().get(randIndexForPractice));
+            List<Lesson> newCoursePractices=new ArrayList<>();
+
+            if(course.getCoursePractices().size()!=0){
+                int randIndexForPractice = random.nextInt(course.getCoursePractices().size());
+                newCoursePractices = Arrays.asList(newCourse.getCoursePractices().get(randIndexForPractice));
+            }
 
             newCourse.setPractices(newCoursePractices);
 
