@@ -1,10 +1,13 @@
 package workshopea.webserver.courses;
 
 import EA.EAManager;
+import com.google.gson.reflect.TypeToken;
 import logic.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 //what is the URL that you are mapping into and what should happen when the request comes to that URL
@@ -45,7 +48,9 @@ public class CoursesController {
     }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/courses")
-    public void deleteCourse(@RequestBody List<String> coursesName){
+    public void deleteCourse(@RequestBody String coursesNameJson){
+        Type userListType = new TypeToken<ArrayList<String>>(){}.getType();
+        List<String> coursesName = coursesService.getGson().fromJson(coursesNameJson,userListType);
         coursesService.delete(coursesName);
     }
 

@@ -86,7 +86,7 @@ public class EAManager
                 new ScheduleFactory(courses, preferences.getMustHaveCourses()),
                 pipeline,
                 new src.main.java.EA.ScheduleFitnessFunction(preferences),
-                new RouletteWheelSelection(),
+                SelectionStrategyFactory.getStrategy(eaRunTimeParameters),
                 new MersenneTwisterRNG());
 
         engine.setSingleThreaded(false);
@@ -101,14 +101,12 @@ public class EAManager
 
         Schedule winningSchedule;
 
+
         winningSchedule = engine.evolve(eaRunTimeParameters.getPopulationSize(), // individuals per generation
                 eaRunTimeParameters.getEliteCount(), // Elites per generation
-                new GenerationCount(eaRunTimeParameters.getNumOfGenerations()));
+                TerminationConditionsFactory.getTerminationConditions(eaRunTimeParameters));
 
-        // Go!
-        //    winningSchedule = engine.evolve(4, // individuals per generation
-        //                0, // Elites per generation
-        //                new ElapsedTime(100));
+
 
         engine.addEvolutionObserver(new ScheduleObserver());
 
@@ -122,7 +120,5 @@ public class EAManager
         // Go!
 
     }
-
-
 
 }

@@ -7,6 +7,7 @@ import logic.Preferences;
 import java.util.List;
 
 public class DtoEA {
+
     private List<Course> courses;
     private Preferences pref;
     private EaRunTimeParameters eaRunTimeParameters;

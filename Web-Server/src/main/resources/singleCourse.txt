@@ -1,0 +1,21 @@
+[
+    {
+        "courseName": "logic",
+        "credits": 4.0,
+        "difficulty": 7,
+        "groups": [
+            {
+                "lessons": [
+                    {
+                        "day": "SUNDAY",
+                        "rangeTime": {
+                            "startTime": "09:15:00",
+                            "endTime": "11:45:00"
+                        }
+                    }
+                ]
+            }
+        ],
+        "testA": "3922-08-12T21:00:00.000+00:00",
+        "testB": "3922-09-20T21:00:00.000+00:00",
+        "mandatory": true}]

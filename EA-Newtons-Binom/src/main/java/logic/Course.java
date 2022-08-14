@@ -1,5 +1,8 @@
 package logic;
 
+import com.sun.glass.ui.Clipboard;
+import com.sun.org.apache.xerces.internal.impl.dtd.models.CMLeaf;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -16,16 +19,21 @@ public class Course implements Cloneable{
     private Date testA;
     private Date testB;
     private Boolean isMandatory;
-    private List<Practice> practices;
+    private List<Lesson> practices;
 
+    public void setPractices(List<Lesson> practices)
+    {
+        this.practices = practices;
+    }
 
     public Course()
     {
 
         groups = new ArrayList<Group>();
+        practices = new ArrayList<Lesson>();
     }
 
-    public Course(String courseName, float credits, int difficulty, List groups, Date testA, Date testB, Boolean isMandatory, List<Practice> practices) {
+    public Course(String courseName, float credits, int difficulty, List groups, Date testA, Date testB, Boolean isMandatory, List<Lesson> practices) {
         this.courseName = courseName;
         this.credits = credits;
         this.difficulty = difficulty;
@@ -43,8 +51,8 @@ public class Course implements Cloneable{
         this.testA = testA;
         this.testB = testB;
         this.isMandatory=mandatory;
-
-        groups=new ArrayList<Group>();
+        groups = new ArrayList<Group>();
+        practices = new ArrayList<Lesson>();
     }
 
 
@@ -58,6 +66,7 @@ public class Course implements Cloneable{
         Course clonedCourse = new Course();
         clonedCourse = (Course)super.clone();
         List<Group> clonedGroupList = new ArrayList<Group>(this.groups.size());
+        List<Lesson> clonedCoursePractices = new ArrayList<Lesson>(this.practices.size());
 
         for (Group group: groups) {
 
@@ -67,8 +76,24 @@ public class Course implements Cloneable{
 
         clonedCourse.setGroups(clonedGroupList);
 
+        for (Lesson practice: practices)
+        {
+
+            clonedCoursePractices.add((Lesson) practice.clone());
+
+        }
+
+        clonedCourse.setCoursePractice(clonedCoursePractices);
+
         return clonedCourse;
-        //  return super.clone();
+
+    }
+
+    private void setCoursePractice(List<Lesson> practice)
+    {
+
+        this.practices = practice;
+
     }
 
     public void setGroups(List<Group> groupList) {
@@ -84,8 +109,8 @@ public class Course implements Cloneable{
     public boolean compareLessonsInCourses(Course course)//if there have range time overLaps with two lessons from different courses
     {
 
-        List<Lesson> lessons = getAllLessons(this);
-        List<Lesson> otherLesson = getAllLessons(course);
+        List<Lesson> lessons = getAllLessonsAndPractices(this);
+        List<Lesson> otherLesson = getAllLessonsAndPractices(course);
 
 
         for(Lesson lesson1:lessons){
@@ -101,20 +126,27 @@ public class Course implements Cloneable{
         return false;
     }
 
-    private List<Lesson> getAllLessons(Course course)
+    private List<Lesson> getAllLessonsAndPractices(Course course)
     {
-        List<Lesson> res=new ArrayList<Lesson>();
+        List<Lesson> res=getAllLessonsInGroup(course);
+
+
+        for(Lesson practice : practices){
+            res.add(practice);
+        }
+
+        return res;
+    }
+
+    private List<Lesson> getAllLessonsInGroup(Course course)
+    {
+        List<Lesson> res= new ArrayList<Lesson>();
         for(Group group: course.getGroups())
         {
-
-
             for (Lesson lesson: group.getLessons())
             {
                 res.add(lesson);
-
             }
-
-
         }
         return res;
     }
@@ -187,5 +219,36 @@ public class Course implements Cloneable{
                 addGroup(group);
             }
         }
+    }
+
+    public List<Lesson> getCoursePractices()
+    {
+
+
+        return practices;
+
+    }
+
+    public void addCoursePractice(Lesson practice)
+    {
+
+        practices.add(practice);
+
+    }
+
+    public boolean isGroupAndPracticeOverlapping()
+    {
+        List<Lesson> lessonsFromGroups = getAllLessonsInGroup(this);
+
+
+        for(Lesson lessonFromSomeGroup : lessonsFromGroups){
+            for(Lesson practice : practices){
+                if(practice.getRangeTime().overlaps(lessonFromSomeGroup.getRangeTime())){
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }
