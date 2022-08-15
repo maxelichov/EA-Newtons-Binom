@@ -19,21 +19,18 @@ public class Course implements Cloneable{
     private Date testA;
     private Date testB;
     private Boolean isMandatory;
-    private List<Lesson> practices = new ArrayList<Lesson>();
-
+    private List<Lesson> practices;
 
     public void setPractices(List<Lesson> practices)
     {
         this.practices = practices;
     }
 
-
-
-
     public Course()
     {
 
         groups = new ArrayList<Group>();
+        practices = new ArrayList<Lesson>();
     }
 
     public Course(String courseName, float credits, int difficulty, List groups, Date testA, Date testB, Boolean isMandatory, List<Lesson> practices) {

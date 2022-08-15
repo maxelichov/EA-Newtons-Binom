@@ -25,6 +25,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Main
@@ -55,11 +56,11 @@ public class Main
         try {
 
 
-            DtoStrategy dtos = new DtoStrategy(Strategies.rouletteWheelSelection, new Probability(0.8), 0.9);
+            DtoStrategy dtos = new DtoStrategy(Strategies.rankSelection, new Probability(0.2), 0.5);
 
-            DtoTerminationCondition dtoc  = new DtoTerminationCondition(TerminationConditions.generationCount, 10000,true, 500, false, 150, 300);
+            DtoTerminationCondition dtoc  = new DtoTerminationCondition(TerminationConditions.elapsedTime, 20000,true, 200, false, 100000, 100000);
 
-            eaRunTimeParameters  =   new EaRunTimeParameters(dtos, dtoc, 50,3);
+            eaRunTimeParameters  =   new EaRunTimeParameters(dtos, dtoc, 150,1);
 
             logicManager = new LogicManager(eaRunTimeParameters);
             WeekSchedule WeekSchedule= new WeekSchedule();
@@ -85,14 +86,14 @@ public class Main
             Gson gson = new Gson();
 
             Type userListType = new TypeToken<ArrayList<Course>>(){}.getType();
-            ArrayList<Course> coursesArray = gson.fromJson(coursesJson , userListType);
+            List<Course> coursesArray = gson.fromJson(coursesJson , userListType);
+
+           List<Course> res = CoursesDemoFactory.createCourses();
+
+            Preferences pref = new Preferences(15,100,10,80,res,40,50,WeekSchedule,null);
 
 
-
-            Preferences pref = new Preferences(25,100,16,100,coursesArray,50,80,WeekSchedule,null);
-
-
-            DtoEA d=new DtoEA(coursesArray,pref,eaRunTimeParameters);
+            DtoEA d=new DtoEA(res,pref,eaRunTimeParameters);
 
             System.out.println("++++++++++++++++++++++++++++++++++++");
             System.out.println(gson.toJson(d));
@@ -110,4 +111,8 @@ public class Main
 
 
     }
+
+
+
+
 }

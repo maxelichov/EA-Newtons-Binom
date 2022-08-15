@@ -48,13 +48,16 @@ public class LogicManager
 
             }
 
-            if(newCourse.getGroups().size() > 0 && newCourse.getCoursePractices().size() > 0)
+            if(newCourse.getGroups().size() > 0)
             {
-                res.add(newCourse);
+                if(currCourse.getCoursePractices().size()==0){
+                    res.add(newCourse);
+                }else{
+                    if(newCourse.getCoursePractices().size() > 0){
+                        res.add(newCourse);
+                    }
+                }
             }
-
-
-
         }
 
         setFilteredCourses(res);

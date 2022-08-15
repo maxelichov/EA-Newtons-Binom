@@ -99,19 +99,28 @@ public class EAManager
     public Schedule generateGeneration(GenerationalEvolutionEngine<Schedule> engine, EaRunTimeParameters eaRunTimeParameters)
     {
 
-        Schedule winningSchedule;
+        Schedule winningSchedule = null;
+
+        try{
+
+            winningSchedule = engine.evolve(eaRunTimeParameters.getPopulationSize(), // individuals per generation
+                    eaRunTimeParameters.getEliteCount(), // Elites per generation
+                    TerminationConditionsFactory.getTerminationConditions(eaRunTimeParameters));
 
 
-        winningSchedule = engine.evolve(eaRunTimeParameters.getPopulationSize(), // individuals per generation
-                eaRunTimeParameters.getEliteCount(), // Elites per generation
-                TerminationConditionsFactory.getTerminationConditions(eaRunTimeParameters));
 
+            engine.addEvolutionObserver(new ScheduleObserver());
 
+        }catch (Exception e)
+        {
 
-        engine.addEvolutionObserver(new ScheduleObserver());
+            System.out.println(e.getMessage());
 
+        }
 
+        
         winningSchedule.printSchedule();
+
         return winningSchedule;
         // Display the health of each generation
         //engine.addEvolutionObserver(new EAPackage.ScheduleObserver());

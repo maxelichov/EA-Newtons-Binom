@@ -98,8 +98,17 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
     private void mutationChangePractice(Schedule currSchedule)
     {
         Random rnd=new Random();
-        Course course = currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+        Course course = null;
 
+        if(currSchedule.getCourses().size() != 0)
+        {
+            course = currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+        }
+        
+        else
+        {
+            return;
+        }
 
         for(Course currCourse: filteredCourses)
         {
@@ -107,6 +116,9 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
                 Lesson newPractice = null;
                 try
                 {
+                    if(currCourse.getCoursePractices().size()==0){
+                        return;
+                    }
                     newPractice = (Lesson) currCourse.getCoursePractices().get(rnd.nextInt(currCourse.getCoursePractices().size())).clone();
                     List<Lesson> newPracticeList=new ArrayList<Lesson>();
                     newPracticeList.add(newPractice);
@@ -124,7 +136,17 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
     private void mutationChangeGroup(Schedule currSchedule)
     {
         Random rnd=new Random();
-        Course course = currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+        Course course = null;
+      if(currSchedule.getCourses().size() != 0)
+      {
+          course = currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+
+
+      }
+
+      else {
+          return;
+      }
 
         for(Course currCourse: filteredCourses)
         {
@@ -150,22 +172,36 @@ public class ScheduleMutation implements EvolutionaryOperator<Schedule>
     private void mutationChangeCourse(Schedule currSchedule)
     {
         Random rnd=new Random();
-        Course courseAboutToBeRemoved=currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
-        if(! isInMustHaveCourse(courseAboutToBeRemoved)){
-            currSchedule.removeCourse(courseAboutToBeRemoved);
-            currSchedule.addCourseToSchedule(createRandomCourseFromFilterList());
-        }
+
+       if(currSchedule.getCourses().size() != 0)
+       {
+           Course courseAboutToBeRemoved=currSchedule.getCourses().get(rnd.nextInt(currSchedule.getCourses().size()));
+           if(! isInMustHaveCourse(courseAboutToBeRemoved)){
+               currSchedule.removeCourse(courseAboutToBeRemoved);
+               currSchedule.addCourseToSchedule(createRandomCourseFromFilterList());
+           }
+
+       }
 
     }
 
     private void mutationRemoveCourse(Schedule currSchedule)
     {
+
         Random randomCourse=new Random();
-        Course courseForRemove = currSchedule.getCourses().get(randomCourse.nextInt(currSchedule.getCourses().size()));
-        if(! isInMustHaveCourse(courseForRemove)){
-            currSchedule.removeCourse(courseForRemove);
+
+        if(currSchedule.getCourses().size() != 0)
+        {
+
+            Course courseForRemove = currSchedule.getCourses().get(randomCourse.nextInt(currSchedule.getCourses().size()));
+            if(! isInMustHaveCourse(courseForRemove)){
+                currSchedule.removeCourse(courseForRemove);
+            }
         }
+
+
     }
+
 
     private boolean isInMustHaveCourse(Course course) {
         for(Course mustHaveCourse : mustHaveCourses){
