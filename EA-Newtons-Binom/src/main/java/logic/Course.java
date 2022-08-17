@@ -1,8 +1,5 @@
 package logic;
 
-import com.sun.glass.ui.Clipboard;
-import com.sun.org.apache.xerces.internal.impl.dtd.models.CMLeaf;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -13,13 +10,14 @@ public class Course implements Cloneable{
 
 
     private String courseName;
-    private double credits;
-    private int difficulty;
     private List<Group> groups;
+    private List<Lesson> practices;
     private Date testA;
     private Date testB;
+    private double credits;
+    private int difficulty;
     private Boolean isMandatory;
-    private List<Lesson> practices;
+
 
     public void setPractices(List<Lesson> practices)
     {
@@ -44,13 +42,13 @@ public class Course implements Cloneable{
         this.practices=practices;
     }
 
-    public Course(String courseName, double credits, int difficulty, Date testA, Date testB, Boolean mandatory) {
+    public Course(String courseName, double credits, int difficulty, Date testA, Date testB, Boolean isMandatory) {
         this.courseName = courseName;
         this.credits = credits;
         this.difficulty = difficulty;
         this.testA = testA;
         this.testB = testB;
-        this.isMandatory=mandatory;
+        this.isMandatory=isMandatory;
         groups = new ArrayList<Group>();
         practices = new ArrayList<Lesson>();
     }
@@ -187,10 +185,17 @@ public class Course implements Cloneable{
     }
 
     @Override
-    public String toString() {
-        return "LOGIC.Course{" + "\n"+
-                "courseName='" + courseName + '\'' + "\n" +
+    public String toString()
+    {
+        return "Course{" +
+                "courseName='" + courseName + '\'' +
                 ", groups=" + groups +
+                ", practices=" + practices +
+                ", testA=" + testA +
+                ", testB=" + testB +
+                ", credits=" + credits +
+                ", difficulty=" + difficulty +
+                ", isMandatory=" + isMandatory +
                 '}';
     }
 
@@ -224,9 +229,7 @@ public class Course implements Cloneable{
     public List<Lesson> getCoursePractices()
     {
 
-
         return practices;
-
     }
 
     public void addCoursePractice(Lesson practice)
@@ -236,7 +239,7 @@ public class Course implements Cloneable{
 
     }
 
-    public boolean isGroupAndPracticeOverlapping()
+    public boolean checkIfGroupAndPracticeOverlapping()
     {
         List<Lesson> lessonsFromGroups = getAllLessonsInGroup(this);
 

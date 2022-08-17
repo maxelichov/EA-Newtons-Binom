@@ -1,6 +1,6 @@
 package workshopea.webserver.courses;
 
-import EA.EAManager;
+import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.Course;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,7 +23,13 @@ public class CoursesController {
     //to map other HTTP methods you'll have to specify it in the annotation
     @RequestMapping("/courses")
     public List<Course> getCourses() {
-        return coursesService.getAllCourses();
+
+         Gson gson = new Gson();
+         List<Course> res = coursesService.getAllCourses();
+          String s = gson.toJson(res);
+        System.out.println(s);
+        return res;
+
     }
 
     // {XXX} means we want to be able to get URL dynamically by variable. in this case XXX=courseName.

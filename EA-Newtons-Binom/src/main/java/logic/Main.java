@@ -83,6 +83,10 @@ public class Main
             System.out.println(coursesJson);
 
 
+
+
+
+
             Gson gson = new Gson();
 
             Type userListType = new TypeToken<ArrayList<Course>>(){}.getType();
@@ -90,12 +94,20 @@ public class Main
 
            List<Course> res = CoursesDemoFactory.createCourses();
 
+
+            System.out.println("++++++++++++++++");
+
+            Gson gson1 = new Gson();
+
+            System.out.println(gson1.toJson(res));
+            System.out.println("++++++++++++++++");
+
             Preferences pref = new Preferences(15,100,10,80,res,40,50,WeekSchedule,null);
 
 
             DtoEA d=new DtoEA(res,pref,eaRunTimeParameters);
 
-            System.out.println("++++++++++++++++++++++++++++++++++++");
+            System.out.println("_____________________");
             System.out.println(gson.toJson(d));
 
 
