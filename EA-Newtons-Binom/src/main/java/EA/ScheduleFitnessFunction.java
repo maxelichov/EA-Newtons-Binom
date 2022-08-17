@@ -187,7 +187,7 @@ public class ScheduleFitnessFunction implements FitnessEvaluator<Schedule>
     {
         List<Course>coursess=schedule.getCourses();
         for(Course course:coursess){
-            if(course.isGroupAndPracticeOverlapping()){
+            if(course.checkIfGroupAndPracticeOverlapping()){
                 return - generation;
             }
         }

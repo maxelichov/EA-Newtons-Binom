@@ -56,11 +56,11 @@ public class Main
         try {
 
 
-            DtoStrategy dtos = new DtoStrategy(Strategies.rouletteWheelSelection, new Probability(0.8), 0.9);
+            DtoStrategy dtos = new DtoStrategy(Strategies.rankSelection, new Probability(0.2), 0.5);
 
-            DtoTerminationCondition dtoc  = new DtoTerminationCondition(TerminationConditions.generationCount, 10000,true, 500, false, 150, 300);
+            DtoTerminationCondition dtoc  = new DtoTerminationCondition(TerminationConditions.elapsedTime, 20000,true, 200, false, 100000, 100000);
 
-            eaRunTimeParameters  =   new EaRunTimeParameters(dtos, dtoc, 50,3);
+            eaRunTimeParameters  =   new EaRunTimeParameters(dtos, dtoc, 150,1);
 
             logicManager = new LogicManager(eaRunTimeParameters);
             WeekSchedule WeekSchedule= new WeekSchedule();
@@ -83,19 +83,31 @@ public class Main
             System.out.println(coursesJson);
 
 
+
+
+
+
             Gson gson = new Gson();
 
             Type userListType = new TypeToken<ArrayList<Course>>(){}.getType();
             List<Course> coursesArray = gson.fromJson(coursesJson , userListType);
 
-            coursesArray = createCourses();
-
-            Preferences pref = new Preferences(25,100,16,100,coursesArray,50,80,WeekSchedule,null);
+           List<Course> res = CoursesDemoFactory.createCourses();
 
 
-            DtoEA d=new DtoEA(coursesArray,pref,eaRunTimeParameters);
+            System.out.println("++++++++++++++++");
 
-            System.out.println("++++++++++++++++++++++++++++++++++++");
+            Gson gson1 = new Gson();
+
+            System.out.println(gson1.toJson(res));
+            System.out.println("++++++++++++++++");
+
+            Preferences pref = new Preferences(15,100,10,80,res,40,50,WeekSchedule,null);
+
+
+            DtoEA d=new DtoEA(res,pref,eaRunTimeParameters);
+
+            System.out.println("_____________________");
             System.out.println(gson.toJson(d));
 
 
@@ -112,63 +124,7 @@ public class Main
 
     }
 
-    private static List<Course> createCourses() {
-        List<Course>res = new ArrayList<Course>();
 
-
-        List<Group> logicGroups = new ArrayList<Group>();
-        List<Lesson> logicPractices = new ArrayList<Lesson>();
-
-
-        List<Lesson> logicLessonsG1= new ArrayList<Lesson>();
-
-        //for new lesson
-        Lesson lesson1G1=new Lesson(Days.SUNDAY, new TimeRange(LocalTime.of(9, 15),LocalTime.of(11, 45)));
-        logicLessonsG1.add(lesson1G1);
-        //
-
-        Group logicGroup1=new Group(logicLessonsG1);
-        logicGroups.add(logicGroup1);
-        //////////////////////another group
-
-
-        List<Lesson> logicLessonsG2= new ArrayList<Lesson>();
-
-        Lesson lesson1G2=new Lesson(Days.MONDAY, new TimeRange(LocalTime.of(8, 15),LocalTime.of(10, 45)));
-        logicLessonsG1.add(lesson1G2);
-
-
-        Group logicGroup2=new Group(logicLessonsG1);
-        logicGroups.add(logicGroup2);
-        /////
-
-
-
-
-
-
-
-        Date logicTestA = new Date(2022,1,17);
-        Date logicTestB = new Date(2022,2,7);
-
-
-
-
-        Lesson logicPractice1=new Lesson(Days.WEDNESDAY, new TimeRange(LocalTime.of(14, 15),LocalTime.of(15, 45)));
-        logicPractices.add(logicPractice1);
-
-
-        Course logic = new Course("Logic",4,7,logicGroups,logicTestA,logicTestB,true,logicPractices);
-        res.add(logic);
-
-
-
-
-
-
-
-        return res;
-    }
 
 
 }
