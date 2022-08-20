@@ -2,6 +2,7 @@ package workshopea.webserver.usersManager;
 
 import com.google.gson.Gson;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,7 @@ public class UserManagerService {
     private Map<String,User> users = new HashMap<>();
     private Gson gson = new Gson();
 
+    @CrossOrigin(origins = "http://localhost:3000")
     public String addUser(String newUserJson){
         User newUser = gson.fromJson(newUserJson,User.class);
 

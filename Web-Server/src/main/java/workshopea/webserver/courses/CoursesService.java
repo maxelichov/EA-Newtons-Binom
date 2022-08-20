@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import logic.Course;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class CoursesService {
     private List<Course> coursesList = new ArrayList<Course>();
     private Gson gson=new Gson();
 
+    @CrossOrigin(origins = "http://localhost:3000")
     public List<Course> getAllCourses(){
         return coursesList;
     }
