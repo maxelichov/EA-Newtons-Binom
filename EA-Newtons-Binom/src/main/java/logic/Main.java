@@ -64,9 +64,9 @@ public class Main
 
             logicManager = new LogicManager(eaRunTimeParameters);
             WeekSchedule WeekSchedule= new WeekSchedule();
-            WeekSchedule.insertNewRange(Days.SATURDAY, new TimeRange(LocalTime.of(16, 00),LocalTime.of(00, 00)));
-            WeekSchedule.insertNewRange(Days.SATURDAY, new TimeRange(LocalTime.of(00, 00),LocalTime.of(17, 00)));
-            WeekSchedule.insertNewRange(Days.THURSDAY, new TimeRange(LocalTime.of(7, 00),LocalTime.of(23, 59)));
+            WeekSchedule.insertNewRange(Days.SATURDAY, new RangeTime(LocalTime.of(16, 00),LocalTime.of(00, 00)));
+            WeekSchedule.insertNewRange(Days.SATURDAY, new RangeTime(LocalTime.of(00, 00),LocalTime.of(17, 00)));
+            WeekSchedule.insertNewRange(Days.THURSDAY, new RangeTime(LocalTime.of(7, 00),LocalTime.of(23, 59)));
 
 
             String coursesJson = null;

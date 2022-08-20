@@ -4,10 +4,10 @@ import java.util.Objects;
 
 public class Lesson implements Cloneable{
     private Days day;
-    private TimeRange timeRange;
+    private RangeTime timeRange;
 
 
-    public Lesson(Days day, TimeRange timeRange){
+    public Lesson(Days day, RangeTime timeRange){
         this.day=day;
         this.timeRange = timeRange;
     }
@@ -38,7 +38,7 @@ public class Lesson implements Cloneable{
         return day;
     }
 
-    public TimeRange getRangeTime() {
+    public RangeTime getRangeTime() {
         return timeRange;
     }
 

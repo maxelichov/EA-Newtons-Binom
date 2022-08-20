@@ -113,8 +113,8 @@ public class Course implements Cloneable{
 
         for(Lesson lesson1:lessons){
             for(Lesson lesson2:otherLesson){
-                TimeRange timeRange1 = lesson1.getRangeTime();
-                TimeRange timeRange2 = lesson2.getRangeTime();
+                RangeTime timeRange1 = lesson1.getRangeTime();
+                RangeTime timeRange2 = lesson2.getRangeTime();
                 if(timeRange1.overlaps(timeRange2)){
                     return true;
                 }
@@ -234,9 +234,9 @@ public class Course implements Cloneable{
 
     public void addCoursePractice(Lesson practice)
     {
-
-        practices.add(practice);
-
+        if(!practices.contains(practice)){
+            practices.add(practice);
+        }
     }
 
     public boolean checkIfGroupAndPracticeOverlapping()
@@ -253,5 +253,15 @@ public class Course implements Cloneable{
         }
 
         return false;
+    }
+
+    public void addPracticeWithoutDup(List<Lesson> coursePractices) {
+        if(practices == null){
+            practices=coursePractices;
+        }else {
+            for (Lesson practice : coursePractices) {
+                addCoursePractice(practice);
+            }
+        }
     }
 }
