@@ -11,6 +11,7 @@ public class User {
         this.isManager = isManager;
     }
 
+
     public String getUserName() {
         return userName;
     }
