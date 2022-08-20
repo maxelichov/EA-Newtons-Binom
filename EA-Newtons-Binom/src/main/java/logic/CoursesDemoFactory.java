@@ -28,7 +28,7 @@ public class CoursesDemoFactory
         List<Lesson> logicLessonsG1= new ArrayList<Lesson>();
 
         //for new lesson
-        Lesson logiclesson1G1=new Lesson(Days.SUNDAY, new TimeRange(LocalTime.of(9, 15),LocalTime.of(11, 45)));
+        Lesson logiclesson1G1=new Lesson(Days.SUNDAY, new RangeTime(LocalTime.of(9, 15),LocalTime.of(11, 45)));
         logicLessonsG1.add(logiclesson1G1);
         //
 
@@ -39,7 +39,7 @@ public class CoursesDemoFactory
 
         List<Lesson> logicLessonsG2= new ArrayList<Lesson>();
 
-        Lesson logiclesson1G2=new Lesson(Days.MONDAY, new TimeRange(LocalTime.of(8, 15),LocalTime.of(10, 45)));
+        Lesson logiclesson1G2=new Lesson(Days.MONDAY, new RangeTime(LocalTime.of(8, 15),LocalTime.of(10, 45)));
         logicLessonsG1.add(logiclesson1G2);
 
 
@@ -53,7 +53,7 @@ public class CoursesDemoFactory
         Date logicTestB = new Date(2022,2,7);
 
 
-        Lesson logicPractice1=new Lesson(Days.WEDNESDAY, new TimeRange(LocalTime.of(14, 15),LocalTime.of(15, 45)));
+        Lesson logicPractice1=new Lesson(Days.WEDNESDAY, new RangeTime(LocalTime.of(14, 15),LocalTime.of(15, 45)));
         logicPractices.add(logicPractice1);
 
 
@@ -69,7 +69,7 @@ public class CoursesDemoFactory
         List<Lesson> osLessonsG1= new ArrayList<Lesson>();
 
         //for new lesson
-        Lesson oslesson1G1=new Lesson(Days.SUNDAY, new TimeRange(LocalTime.of(9, 15),LocalTime.of(11, 45)));
+        Lesson oslesson1G1=new Lesson(Days.SUNDAY, new RangeTime(LocalTime.of(9, 15),LocalTime.of(11, 45)));
         osLessonsG1.add(oslesson1G1);
         //
 
@@ -80,7 +80,7 @@ public class CoursesDemoFactory
 
         List<Lesson> osLessonsG2= new ArrayList<Lesson>();
 
-        Lesson oslesson1G2=new Lesson(Days.FRIDAY, new TimeRange(LocalTime.of(10, 15),LocalTime.of(12, 45)));
+        Lesson oslesson1G2=new Lesson(Days.FRIDAY, new RangeTime(LocalTime.of(10, 15),LocalTime.of(12, 45)));
         osLessonsG1.add(oslesson1G2);
 
 
@@ -94,7 +94,7 @@ public class CoursesDemoFactory
         Date osTestB = new Date(2022,2,7);
 
 
-        Lesson osPractice1=new Lesson(Days.THURSDAY, new TimeRange(LocalTime.of(10, 00),LocalTime.of(11, 45)));
+        Lesson osPractice1=new Lesson(Days.THURSDAY, new RangeTime(LocalTime.of(10, 00),LocalTime.of(11, 45)));
         osPractices.add(osPractice1);
 
 
@@ -112,7 +112,7 @@ public class CoursesDemoFactory
         List<Lesson> compLessonsG2= new ArrayList<Lesson>();
 
         //for new lesson
-        Lesson complesson1G1=new Lesson(Days.WEDNESDAY, new TimeRange(LocalTime.of(11, 00),LocalTime.of(12, 45)));
+        Lesson complesson1G1=new Lesson(Days.WEDNESDAY, new RangeTime(LocalTime.of(11, 00),LocalTime.of(12, 45)));
         compLessonsG1.add(complesson1G1);
         //
 
@@ -123,7 +123,7 @@ public class CoursesDemoFactory
 
 
 
-        Lesson complesson1G2=new Lesson(Days.THURSDAY, new TimeRange(LocalTime.of(10, 15),LocalTime.of(12, 00)));
+        Lesson complesson1G2=new Lesson(Days.THURSDAY, new RangeTime(LocalTime.of(10, 15),LocalTime.of(12, 00)));
         compLessonsG1.add(complesson1G2);
 
 
@@ -155,7 +155,7 @@ public class CoursesDemoFactory
         List<Lesson> dataBasesLessonsG2= new ArrayList<Lesson>();
 
         //for new lesson
-        Lesson dataBaseslesson1G1=new Lesson(Days.SUNDAY, new TimeRange(LocalTime.of(14, 00),LocalTime.of(16, 45)));
+        Lesson dataBaseslesson1G1=new Lesson(Days.SUNDAY, new RangeTime(LocalTime.of(14, 00),LocalTime.of(16, 45)));
         dataBasesLessonsG1.add(dataBaseslesson1G1);
         //
 
@@ -166,7 +166,7 @@ public class CoursesDemoFactory
 
 
 
-        Lesson dataBaseslesson1G2=new Lesson(Days.WEDNESDAY, new TimeRange(LocalTime.of(13, 00),LocalTime.of(14, 45)));
+        Lesson dataBaseslesson1G2=new Lesson(Days.WEDNESDAY, new RangeTime(LocalTime.of(13, 00),LocalTime.of(14, 45)));
         dataBasesLessonsG1.add(dataBaseslesson1G2);
 
 
@@ -198,7 +198,7 @@ public class CoursesDemoFactory
         List<Lesson> networkingLessonsG2= new ArrayList<Lesson>();
 
         //for new lesson
-        Lesson networkinglesson1G1=new Lesson(Days.MONDAY, new TimeRange(LocalTime.of(9, 45),LocalTime.of(12, 30)));
+        Lesson networkinglesson1G1=new Lesson(Days.MONDAY, new RangeTime(LocalTime.of(9, 45),LocalTime.of(12, 30)));
         networkingLessonsG1.add(networkinglesson1G1);
         //
 
@@ -209,7 +209,7 @@ public class CoursesDemoFactory
 
 
 
-        Lesson networkinglesson1G2=new Lesson(Days.TUESDAY, new TimeRange(LocalTime.of(12, 30),LocalTime.of(14, 00)));
+        Lesson networkinglesson1G2=new Lesson(Days.TUESDAY, new RangeTime(LocalTime.of(12, 30),LocalTime.of(14, 00)));
         networkingLessonsG1.add(networkinglesson1G2);
 
 

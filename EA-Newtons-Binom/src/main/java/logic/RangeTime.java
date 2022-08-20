@@ -4,11 +4,11 @@ import java.time.LocalTime;
 import java.util.Objects;
 
 //todo: what if end time<start time
-public class TimeRange {
+public class RangeTime {
     private LocalTime startTime;// = LocalTime.of(12, 20);
     private LocalTime endTime;// = LocalTime.of(12, 20);
 
-    public TimeRange(LocalTime startTime, LocalTime endTime){
+    public RangeTime(LocalTime startTime, LocalTime endTime){
         this.startTime=startTime;
         this.endTime=endTime;
     }
@@ -21,7 +21,7 @@ public class TimeRange {
         return endTime;
     }
 
-    public boolean overlaps(TimeRange timeRange) {
+    public boolean overlaps(RangeTime timeRange) {
         if(timeRange.endTime.isBefore(startTime) || timeRange.startTime.isAfter(endTime)){
             return true;
         }
@@ -41,8 +41,8 @@ public class TimeRange {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        TimeRange timeRange = (TimeRange) o;
-        return startTime.equals(timeRange.startTime) && endTime.equals(timeRange.endTime);
+        RangeTime rangeTime = (RangeTime) o;
+        return startTime.equals(rangeTime.startTime) && endTime.equals(rangeTime.endTime);
     }
 
     @Override

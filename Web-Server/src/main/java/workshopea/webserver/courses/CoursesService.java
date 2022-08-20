@@ -38,7 +38,6 @@ public class CoursesService {
     public List<String> addAllByJson(String coursesJson) {
         Type userListType = new TypeToken<ArrayList<Course>>(){}.getType();
         ArrayList<Course> courses = gson.fromJson(coursesJson , userListType);
-
         List<String> res = new ArrayList<String>();
 
         List<String> coursesName = coursesName();
@@ -48,6 +47,7 @@ public class CoursesService {
                 for(int i=0; i<coursesList.size(); i++){
                     if(newCourse.getCourseName().equalsIgnoreCase(coursesList.get(i).getCourseName())) {
                         coursesList.get(i).addGroupsWithoutDup(newCourse.getGroups());
+                        coursesList.get(i).addPracticeWithoutDup(newCourse.getCoursePractices());
                         res.add(newCourse.getCourseName());
                     }
                 }

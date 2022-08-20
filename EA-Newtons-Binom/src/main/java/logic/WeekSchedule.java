@@ -15,11 +15,11 @@ public class WeekSchedule
         }
     }
 
-    public void insertNewRange(Days day, TimeRange range){
+    public void insertNewRange(Days day, RangeTime range){
         weekSchedule.get(day.getValue()).addRangeToDay(range);
     }
 
-    public boolean isAvailabile(Days day, TimeRange timeRange)
+    public boolean isAvailabile(Days day, RangeTime timeRange)
     {
         return weekSchedule.get(day.getValue()).isAvailabile(timeRange);
     }
