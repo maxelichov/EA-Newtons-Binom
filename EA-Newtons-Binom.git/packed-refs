@@ -1,0 +1,10 @@
+# pack-refs with: peeled fully-peeled sorted 
+032d59aab532238a7b6d64b7cbefa689f05fbd82 refs/heads/backend
+f36875140e88f558fc8e3e7071d1ab2bf7a0c95e refs/heads/main
+0213c7bd0ebda28dcacc29a5ddd4ebab228af08b refs/heads/master
+b1c6f66895805b1fecfda7e095274eb89d9a4290 refs/heads/max_branch
+84f4f618a3b0cbcc542c7ca8e624d2566b645696 refs/heads/ohad4
+0213c7bd0ebda28dcacc29a5ddd4ebab228af08b refs/heads/ohad5
+d160c9373c21c4dfede47995796f47c3786972c8 refs/heads/ohad6
+a1c8e97d47c1c773a35990cf3b0a3cddc9c6d2a4 refs/heads/practice_feature
+db7e84e35d96e2d8a453ac273bbd659bbeb20257 refs/heads/ui
